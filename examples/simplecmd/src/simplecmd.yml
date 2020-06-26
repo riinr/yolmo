@@ -1,0 +1,24 @@
+name: simplecmd
+description: simple command with ymlcli
+example: simplecmd argument
+params:
+  - name: param
+    description: simple argument
+    short: p
+    example: |
+      -p value
+      --param value
+    type: string
+flags:
+  - name: flag
+    description: simple flag
+    short: f
+    example: |
+      -f
+      --flag
+  - name: help
+    description: show help
+    short: h
+    example: |
+      -h
+      --help
