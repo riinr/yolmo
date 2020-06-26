@@ -42,4 +42,3 @@ Define cli tools with yml
 * [nap](https://nimble.directory/pkg/nap)
 * [nmi](https://nimble.directory/pkg/nmi)
 * [rainbow](https://nimble.directory/pkg/rainbow)
-*

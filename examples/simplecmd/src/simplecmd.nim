@@ -2,6 +2,8 @@ import yolmo, tables, streams, strutils
 
 when isMainModule:
   let definition = staticReadDef(currentSourcePath.replace(".nim", ".yml"))
+  static:
+    let otherCommand = commandOf(definition)
   let command = commandOf(definition)
 
   cli(command, call):
