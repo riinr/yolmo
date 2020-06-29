@@ -1,0 +1,21 @@
+- name: Run nim check with reviewdog
+  uses: reviewdog/action-nimlint@v1.0.0
+  with:
+    # GITHUB_TOKEN
+    github_token: ${{ github.token }}
+    # Working directory relative to the root directory.
+    workdir: .
+    # Report level for reviewdog [info,warning,error]
+    level: error
+    # Reporter of reviewdog command [github-pr-check,github-pr-review].
+    reporter: github-pr-check
+    # Filtering for the reviewdog command [added,diff_context,file,nofilter]. Default is added.
+
+    filter_mode: added
+    # Exit code for reviewdog when errors are found [true,false] Default is `false`.
+
+    fail_on_error: true
+    # Additional reviewdog flags
+    reviewdog_flags: # optional, default is 
+    # Flags and args of eslint command. Default: 'src/*.nim'
+    src: src/*.nim
